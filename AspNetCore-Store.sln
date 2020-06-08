@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Memory", "Infrastructure\Store.Memory\Store.Memory.csproj", "{E7D65781-1A61-4EC0-AD62-B2C732D2B7A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Web", "Presentation\Store.Web\Store.Web.csproj", "{21401704-43B7-493A-9468-B9C57FE8CEA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Web", "Presentation\Store.Web\Store.Web.csproj", "{21401704-43B7-493A-9468-B9C57FE8CEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Tests", "Domain\Store.Tests\Store.Tests.csproj", "{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,18 @@ Global
 		{21401704-43B7-493A-9468-B9C57FE8CEA5}.Release|x64.Build.0 = Release|Any CPU
 		{21401704-43B7-493A-9468-B9C57FE8CEA5}.Release|x86.ActiveCfg = Release|Any CPU
 		{21401704-43B7-493A-9468-B9C57FE8CEA5}.Release|x86.Build.0 = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|x64.Build.0 = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +83,7 @@ Global
 		{0791E417-12FE-42DB-A286-82DE8BDBD03C} = {26DD74C4-8623-4053-84E2-CE97058FFC97}
 		{E7D65781-1A61-4EC0-AD62-B2C732D2B7A6} = {398C20B1-D077-4C70-BA92-C562E6A21DC5}
 		{21401704-43B7-493A-9468-B9C57FE8CEA5} = {78184928-3094-4D79-9182-AA911D963F89}
+		{FF067D5A-0993-4D28-B742-15EEFBC2DF7D} = {26DD74C4-8623-4053-84E2-CE97058FFC97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {395CAD78-B413-4054-BFE9-50A1AF516070}
