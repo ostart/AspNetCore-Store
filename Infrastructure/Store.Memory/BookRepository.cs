@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Store.Memory
 {
@@ -7,9 +6,9 @@ namespace Store.Memory
     {
         private readonly Book[] books = new[]
         {
-            new Book(1, "ISBN 1231231231", "D. Knuth", "Art Of Programming"),
-            new Book(2, "ISBN 1231231232", "M. Fowler", "Refactoring"),
-            new Book(3, "ISBN 1231231233", "B. Kernighan, D. Ritchie", "C Programming Language"),
+            new Book(1, "ISBN 1231231231", "D. Knuth", "Art Of Programming", "Super classical book about programming", 12.45m),
+            new Book(2, "ISBN 1231231232", "M. Fowler", "Refactoring", "Must read for refactoring code knowledge", 7.14m),
+            new Book(3, "ISBN 1231231233", "B. Kernighan, D. Ritchie", "C Programming Language", "C forever", 10.99m),
         };
 
         public Book[] GetAllByTitleOrAuthor(string titleOrAuthor)
@@ -20,6 +19,11 @@ namespace Store.Memory
         public Book[] GetAllByIsbn(string isbn)
         {
             return books.Where(book => book.Isbn == isbn).ToArray();
+        }
+
+        public Book GetById(int id)
+        {
+            return books.Single(x => x.Id == id);
         }
     }
 }
