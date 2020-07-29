@@ -15,7 +15,7 @@ namespace Store.Web.Controllers
             this.bookRepository = bookRepository;
             this.orderRepository = orderRepository;
         }
-        public IActionResult AddItem(int bookId, int count)
+        public IActionResult AddItem(int bookId, int count = 1)
         {
             (Order order, Cart cart) = GetOrCreateOrderAndCart();
 
@@ -24,7 +24,7 @@ namespace Store.Web.Controllers
             order.AddOrUpdateItem(book, count);
             SaveOrderAndCart(order,cart);
 
-            return RedirectToAction("Index", "Book", new { bookId });
+            return RedirectToAction("Index", "Book", new { id = bookId });
         }
 
         public IActionResult Index()
