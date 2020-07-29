@@ -1,21 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Store
 {
     public class OrderItem
     {
         public int BookId { get; }
-        public int Count { get; }
+
+        private int _count;
+        public int Count
+        {
+            get => _count;
+            set
+            {
+                ThrowIfInvalidCount(value);
+                _count = value;
+            }
+        }
         public decimal Price { get; }
 
         public OrderItem(int bookId, int count, decimal price)
         {
-            if (count <= 0) throw new ArgumentOutOfRangeException("count must be greater then 0");
+            ThrowIfInvalidCount(count);
             BookId = bookId;
             Count = count;
             Price = price;
+        }
+
+        private static void ThrowIfInvalidCount(int count)
+        {
+            if (count <= 0) throw new ArgumentOutOfRangeException("Count must be greater then 0");
         }
     }
 }
